@@ -1,0 +1,221 @@
+@import url('http://fonts.cdnfonts.com/css/chirp-2');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  font-family: 'Chirp', sans-serif;
+}
+ul {
+  list-style-type: none;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  padding-right: 0.8rem;
+}
+.links {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  align-self: flex-start;
+  row-gap: 0.8rem;
+}
+.profile {
+  width: 100%;
+  height: 3.4rem;
+  background: rgba(255, 255, 255, 0.171);
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+li {
+  font-size: x-large;
+  width: fit-content;
+  padding: 0.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  transition: background ease-in-out 0.1s;
+  border-radius: 30px;
+}
+li:hover {
+  background: rgba(245, 245, 245, 0.082);
+}
+button {
+  background: #1d9bf0;
+  color: white;
+  border-radius: 55px;
+  padding: 1.1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+button:hover {
+  background: #1d96e7;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  overflow-y: scroll;
+  height: 100vh;
+}
+.block {
+  border-top: 1px solid rgba(128, 128, 128, 0.521);
+  border-left: 1px solid rgba(128, 128, 128, 0.521);
+  border-right: 1px solid rgba(128, 128, 128, 0.521);
+  background: #000000;
+  height: fit-content;
+  width: 600px;
+  padding: 1rem;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.tweet {
+  display: flex;
+  width: 99.6%;
+  height: 200px;
+  border: 1px solid rgba(128, 128, 128, 0.521);
+  border-bottom: none;
+  flex-direction: column;
+  margin-top: 3rem;
+  border-top: none;
+}
+h2 {
+  margin: 0;
+  padding-top: 1rem;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.747);
+  width: 100%;
+  padding-left: 1rem;
+  backdrop-filter: blur(1px);
+  padding-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+.tweet-wrapper {
+  display: flex;
+  margin: 1rem;
+}
+textarea {
+  width: 100%;
+  height: fit-content;
+  width: 502px;
+  height: 60px;
+  background: #000000;
+  border: none;
+  resize: none;
+  color: white;
+  font-size: x-large;
+}
+textarea:focus {
+  outline: none;
+  border: none;
+}
+::placeholder {
+  font-size: x-large;
+}
+.profile-pic {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+li:nth-child(1) {
+  font-weight: bold;
+}
+
+.t-message {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.profile-pic2 {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+}
+.user-d {
+  display: flex;
+  column-gap: 0.4rem;
+  width: 30rem;
+}
+.message {
+ 
+}
+.t-media {
+  border-radius: 26px;
+  border: 1px solid rgba(128, 128, 128, 0.842);
+  margin-bottom: 0.4rem;
+}
+.nick:hover {
+  text-decoration: underline;
+}
+.username {
+  opacity: 0.6;
+}
+.time {
+  opacity: 0.6;
+}
+.bi-three-dots {
+  opacity: 0.6;
+  display: flex;
+  align-self: center;
+}
